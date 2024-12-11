@@ -1,0 +1,27 @@
+<!-- <p>usuario-detalles works!</p> -->
+<div class="container d-flex justify-content-center align-items-center min-vh-80">
+    <form (ngSubmit)="onSubmit()" class="w-50">
+        <h3>Informacion Basica</h3>
+        <div>
+            <div>
+                <label><b>Identificacion : </b> {{ usuario.identificacion }}</label>
+            </div>
+            <div>
+                <label><b>Primer Nombre : </b> {{ usuario.primer_nombre }}</label>
+            </div>
+            <div>
+                <label><b>Segundo Nombre : </b> {{ usuario.segundo_nombre }}</label>
+            </div>
+            <div>
+                <label><b>Primer Apellido : </b> {{ usuario.primer_apellido }}</label>
+            </div>
+            <div>
+                <label><b>Segundo Apellido : </b> {{ usuario.segundo_apellido }}</label>
+            </div>
+            <div>
+                <label><b>Telefono : </b> {{ usuario.telefono }}</label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-danger rounded-pill">Regresar</button>
+    </form>
+</div>

@@ -1,0 +1,16 @@
+{
+  "status": 200,
+  "data": {
+      "id": 1,
+      "identificacion": 23445322,
+      "primer_nombre": "Juan",
+      "segundo_nombre": "Carlos",
+      "primer_apellido": "Pérez",
+      "segundo_apellido": "García",
+      "telefono": "3001234567",
+      "direccion": "Calle 123 #45-67",
+      "ciudad_residencia": "Bogotá",
+      "tipoDocumento": "C"
+  },
+  "error": null
+}

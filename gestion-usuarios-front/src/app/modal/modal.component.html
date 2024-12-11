@@ -1,0 +1,34 @@
+<!-- <p>modal works!</p> -->
+<div class="container d-flex justify-content-center align-items-center min-vh-80">
+    <form (ngSubmit)="onSubmit()" class="w-50" #usuarioForm="ngForm">
+        <div class="form-group">
+            <label for="tipoDocumento">Tipo de documento</label>
+            <select class="form-control" id="tipoDocumento" name="tipoDocumento" [(ngModel)]="usuario.tipoDocumento" required #tipoDocumento="ngModel">
+                <option value="">Seleccione una opción</option>
+                <option value="C">Cédula de Ciudadanía</option>
+                <option value="P">Pasaporte</option>
+            </select>
+            <div *ngIf="tipoDocumento.invalid && tipoDocumento.touched" class="text-danger">
+                Este campo es obligatorio.
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Numero de documento</label>
+            <input type="text" class="form-control" id="identificacion" name="identificacion"
+                [(ngModel)]="usuario.identificacion" placeholder="Ingrese su identificacion" 
+                required
+                minlength="8" 
+                maxlength="11"
+                pattern="^[0-9]{1,3}(?:[.,][0-9]{3})*$"
+                #identificacion="ngModel">
+            <div *ngIf="identificacion.invalid && identificacion.touched" class="text-danger">
+                La identificación debe tener entre 8 y 11 caracteres, solo números y separadores de miles.
+                por ejemplo 1.111.111
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary rounded-pill" [disabled]="usuarioForm.invalid">Buscar</button>
+    </form>
+</div>
+

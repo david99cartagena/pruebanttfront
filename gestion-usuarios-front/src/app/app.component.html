@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a routerLink="usuarios" routerLinkActive="active" class="nav-link">Lista de Usuarios</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="registrar-usuario" routerLinkActive="active" class="nav-link">Agregar usuario</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="usuarios/consultar-por-documento/:tipodoc/:id" routerLinkActive="active" class="nav-link">Formulario Buscar</a>
+      <!-- <a [routerLink]="'usuarios/consultar-por-documento/' + valuetpdoc + '/'+ valueid"> -->
+    </li>
+  </ul>
+</nav>
+<h1 class="text-center">Gestion de Usuarios</h1>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

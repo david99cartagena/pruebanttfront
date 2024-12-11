@@ -1,0 +1,40 @@
+<h2>Lista de Usuarios</h2>
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Identificacion</th>
+            <th>Primer Nombre</th>
+            <!-- <th>Segundo Nombre</th> -->
+            <th>Primer Apellido</th>
+            <!-- <th>Segundo Apellido</th> -->
+            <th>Telefono</th>
+            <th>Direccion</th>
+            <th>Cuidad</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let usuario of usuarios">
+            <th>{{ usuario.identificacion }}</th>
+            <!-- <th>{{ usuario.tipoDocumento }}</th> -->
+            <th>{{ usuario.primer_nombre }}</th>
+            <!-- <th>{{ usuario.segundo_nombre }}</th> -->
+            <th>{{ usuario.primer_apellido }}</th>
+            <!-- <th>{{ usuario.segundo_apellido }}</th> -->
+            <th>{{ usuario.telefono }}</th>
+            <th>{{ usuario.direccion }}</th>
+            <th>{{ usuario.ciudad_residencia }}</th>
+            <td>
+                <button (click)="actualizarUsuario(usuario.id)" class="btn btn-info">
+                    Editar
+                </button>
+                <button (click)="eliminarUsuario(usuario.id)" class="btn btn-danger" style="margin-left : 10px;">
+                    Eliminar
+                </button>
+                <button (click)="verDetallesUsuario(usuario.id)" class="btn btn-primary" style="margin-left : 10px;">
+                    Detalles
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
