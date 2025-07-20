@@ -1,54 +1,76 @@
-# Prueba ntt Front
+# Prueba NTT Front
 
-## Construido con 🛠️
-Herramientas utilizadas
-- [node. js] - version v22.3.0, Entorno en tiempo de ejecución multiplataforma para la capa del servidor ( en el lado del servidor )
-- [Angular] - version 15.2.11, Framework de Frontend
-- [Typescript] - version 4.9.5
-- [Bootstrap] - version 4.0
-- [VisualStudioCode] Editor de Codigo
-- [Git] - version 2.40.0, Sistema de control de versiones
-- [MySQL Workbench] - version 8.0.40, Workbench, también conocido como MySQL Workbench, es una herramienta de diseño y administración visual para bases de datos MySQL
-- [Postman] - version 11.22.1, Postman es una herramienta de colaboración y prueba de API que permite a los desarrolladores probar, documentar y compartir fácilmente APIs.
+## ⚙️ Construido con 🛠️
 
-## Frontend
+Herramientas utilizadas:
 
-(Obligatorio) Instalar dependecias
+- **Node.js** - Versión `v22.3.0`, entorno en tiempo de ejecución multiplataforma
+- **Angular** - Versión `15.2.11`, framework de frontend
+- **TypeScript** - Versión `4.9.5`
+- **Bootstrap** - Versión `4.0`
+- **Visual Studio Code** - Editor de código
+- **Git** - Versión `2.40.0`, sistema de control de versiones
+- **MySQL Workbench** - Versión `8.0.40`, herramienta de diseño y administración visual para bases de datos MySQL
+- **Postman** - Versión `11.22.1`, herramienta para pruebas y documentación de APIs
+
+---
+
+## 🖼️ Frontend
+
+### ✅ (Obligatorio) Instalar dependencias
+
 ```sh
 npm install
 ```
-Versiones de angular y node js
+
+### Verificar versiones de Angular y Node.js
+
 ```sh
-node -v o node –version
+node -v
 ```
 
 ```sh
 ng version
 ```
 
-( Opcional ) Instalar angular cli
+### 🟡 (Opcional) Instalar Angular CLI
+
 ```sh
 npm install @angular/cli
 ```
 
-## ( Obligatorio ) 
-Iniciar proyecto o ejecutarlo con un navegador predeterminado.
-Navegue a 
-> http://localhost:4200/ 
+---
+
+## ✅ (Obligatorio) Iniciar proyecto
+
+Ejecutar el proyecto y abrir en el navegador:
+
+> http://localhost:4200/
 
 La aplicación se recargará automáticamente si cambia cualquiera de los archivos de origen.
 
 ```sh
-ng serve -open or ng s -o
+ng serve --open
 ```
 
-( Opcional ) Iniciar proyecto con x puerto
+O versión abreviada:
+
 ```sh
-ng serve
+ng s -o
+```
+
+---
+
+## 🟡 (Opcional) Iniciar el proyecto con un puerto personalizado
+
+```sh
 ng serve -o --port=4200
 ```
 
-Generar Artefactos o Componentes de una App Angular
+---
+
+## 🛠️ Generar componentes de Angular
+
 ```sh
 ng generate component mi-componente
 ```
